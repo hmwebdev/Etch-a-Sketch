@@ -63,6 +63,7 @@ button {
 body {
   display: grid;
   background-image: url("app/img/clipart1868079.png");
+  background-color: #db5a0f;
   background-position-x: center;
   background-position-y: 15%;
   background-repeat: no-repeat;
