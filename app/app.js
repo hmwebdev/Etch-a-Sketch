@@ -29,6 +29,23 @@ function sketch() {
   });
 }
 
+function randomColor() {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  const squareSelector = document.querySelectorAll(".square");
+  squareSelector.forEach((square) => {
+    square.addEventListener("mouseenter", () => {
+      square.style.backgroundColor = "#" + randomColor;
+    });
+  });
+}
+
+function erease() {
+  const squareSelector = document.querySelectorAll(".square");
+  squareSelector.forEach((square) => {
+    square.style.backgroundColor = "transparent";
+  });
+}
+
 buildGrid();
 sketch();
 
@@ -55,3 +72,6 @@ button.addEventListener("click", () => {
     alert("Please enter a number only. Max 100");
   }
 });
+
+document.getElementById("random-color").addEventListener("click", randomColor);
+document.getElementById("erease").addEventListener("click", erease);

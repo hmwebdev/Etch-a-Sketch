@@ -33,6 +33,7 @@
 
 #btn-section {
   text-align: center;
+  padding-top: 5%;
 }
 
 h1 {
@@ -62,8 +63,8 @@ button {
 body {
   display: grid;
   background-image: url("app/img/clipart1868079.png");
-  background-position-x: center; /* Center the image */
+  background-position-x: center;
   background-position-y: 15%;
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 70% 1000px; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
+  background-size: 70% 1000px;
 }
